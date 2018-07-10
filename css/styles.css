@@ -146,9 +146,9 @@ h3~p{
 /* Education
 -------------------------*/
 .education {
-  
-    
-    background:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.5)), url("https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/26168459_947069592127730_7462648266885060059_n.jpg?oh=9a1f0ccdb3e85c216b988e36a989d326&oe=5B02A7F8") fixed;
+
+
+    background:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.5)), url("education-background.jpg") fixed;
     background-repeat: none;
     background-size: cover;
 
