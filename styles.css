@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  background-color: #33181a;
+  background: radial-gradient(#663135 20%, #33181a);
   padding: 20px;
   color: white;
 }
