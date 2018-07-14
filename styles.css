@@ -6,4 +6,5 @@ header {
   background: radial-gradient(#663135 20%, #33181a);
   padding: 20px;
   color: white;
+  z-index:2;
 }
