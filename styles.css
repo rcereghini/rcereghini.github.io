@@ -7,3 +7,7 @@ header {
   padding: 20px;
   color: white;
 }
+
+.descriptionSection {
+  background: radial-gradient(#663135 20%, #33181a);
+}
