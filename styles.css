@@ -1,18 +1,28 @@
 body {
   text-align: center;
-  font-family: 'Maitree', serif;
+  font-family: "Maitree", serif;
+  background-image: url("./assets/paper-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
-  background: radial-gradient(#663135 20%, #33181a);
+  background: radial-gradient(#663135 30%, #33181a);
   padding: 20px;
   color: white;
 }
 
 .descriptionSection {
   background: radial-gradient(#663135 20%, #33181a);
+  box-shadow: 0px 2px 5px 0px #888888;
 }
 
-b{
-  font-family: 'Rokkitt', serif;
+b {
+  font-family: "Rokkitt", serif;
+}
+
+li {
+  background: white;
 }
