@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  font-family: 'Maitree', serif;
 }
 
 header {
@@ -10,4 +11,8 @@ header {
 
 .descriptionSection {
   background: radial-gradient(#663135 20%, #33181a);
+}
+
+b{
+  font-family: 'Rokkitt', serif;
 }
