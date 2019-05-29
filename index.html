@@ -27,262 +27,251 @@
 
     <title>Robert Cereghini</title>
     <script>
-      const COMPLETED_PROJECTS = [
-        {
-          title: "Face Counter",
-          subTitle: "React, Node.js, PostgreSQL",
-          image: "assets/facial-recognition.jpg",
-          link: "https://facial-recognition-counter.herokuapp.com/"
-        },
-        {
-<<<<<<< HEAD
-          title: "Block Breaker",
-          subTitle: "Unity, C#, <br>[SORRY, OUT OF ORDER]",
-          image: "assets/blocks.jpg",
-          link: ""
-=======
-          title: 'Block Breaker',
-          subTitle: 'Unity, C#, <br>[SORRY, NEEDS NEW HOSTING. CHECK AGAIN SOON.]',
-          image: 'assets/blocks.jpg',
-          link: ''
->>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
-        },
-        {
-          title: "Robofriends",
-          subTitle: "React, Node.js, Redux",
-          image: "assets/robofriend.jpg",
-          link: "https://robot-friend-search.herokuapp.com/"
-        },
-        {
-          title: "News Feed",
-          subTitle: "React, Axios, NewsAPI",
-          image: "assets/news.jpg",
-          link: "https://rcc-news-feed.herokuapp.com/"
-        }
-      ];
+            const COMPLETED_PROJECTS = [
+              {
+                title: "Face Counter",
+                subTitle: "React, Node.js, PostgreSQL",
+                image: "assets/facial-recognition.jpg",
+                link: "https://facial-recognition-counter.herokuapp.com/"
+              },
+              {
+      <<<<<<< HEAD
+                title: "Block Breaker",
+                subTitle: "Unity, C#, <br>[SORRY, OUT OF ORDER]",
+                image: "assets/blocks.jpg",
+                link: ""
+      =======
+                title: 'Block Breaker',
+                subTitle: 'Unity, C#, <br>[SORRY, NEEDS NEW HOSTING. CHECK AGAIN SOON.]',
+                image: 'assets/blocks.jpg',
+                link: ''
+      >>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
+              },
+              {
+                title: "Robofriends",
+                subTitle: "React, Node.js, Redux",
+                image: "assets/robofriend.jpg",
+                link: "https://robot-friend-search.herokuapp.com/"
+              },
+              {
+                title: "News Feed",
+                subTitle: "React, Axios, NewsAPI",
+                image: "assets/news.jpg",
+                link: "https://rcc-news-feed.herokuapp.com/"
+              }
+            ];
 
-      const FULL_STACK_CERTIFICATES = [
-        {
-          name: "The Complete Web Developer in 2018: Zero to Mastery",
-          link: "https://www.udemy.com/the-complete-web-developer-in-2018/"
-        },
-        {
-          name: "Web Development Foundations: Full-Stack vs Front-End",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=7C8169EA18BE4C74A689461D6E9412C8"
-        },
-        {
-          name: "Become a Web Developer Learning Path",
-          link:
-            "https://www.lynda.com/learning-paths/Web/become-a-web-developer"
-        }
-      ];
-      const FRONT_END_CERTIFICATES = [
-        {
-          name: "HTML Essential Training",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=27B192C2A8E04EB8BF643C35B8CE4EBB"
-        },
-        {
-          name: "HTML Fundamentals",
-          link: "https://www.sololearn.com/Certificate/1014-7295288/pdf/"
-        },
-        {
-          name: "Introduction to CSS",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=7D49FBBC67FD49D892C19632E8BD4D58"
-        },
-        {
-          name: "CSS Fundamentals",
-          link: "https://www.sololearn.com/Certificate/1023-7295288/pdf/"
-        },
-        {
-          name: "CSS Essential Training 1",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=7B13742E79694C8DB312CDF3E1017B65"
-        },
-        {
-          name: "CSS Essential Training 2",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=22EE7DC1A6154C33BAD130428DE9FAEB"
-        },
-        {
-          name: "Programming Foundations: Fundamentals",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=6D44DDCC9F26466A8E03E72E39CD9517"
-        },
-        {
-          name: "JQuery Tutorial",
-          link: "https://www.sololearn.com/Certificate/1082-7295288/pdf/"
-        },
-        {
-          name: "JavaScript Tutorial",
-          link: "https://www.sololearn.com/Certificate/1024-7295288/pdf/"
-        },
-        {
-          name: "JavaScript Essential Training",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=CF3339F0A7404C13BB6A23A224365614"
-        },
-        {
-          name: "JavaScript: Classes",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=11D4E37FEB5C4898849FE7E3B76057CC"
-        },
-        {
-          name: "Learning React.js",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=F73B35357B6D488F9EF00C6CFD95083E"
-        },
-        {
-          name: "React: Working with APIs",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=681DE13C92B445C886EDE509C945C14D"
-        },
-        {
-          name: "Learning React Native",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=B66222BA7EA94B3F92D3B41BCE8F8C78"
-        },
-        {
-          name: "Learning React VR",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=820687CE3FBB4C56A439F30B3DE0AB50"
-        },
-        {
-          name: "Python Tutorial",
-          link: "https://www.sololearn.com/Certificate/1073-7295288/pdf/"
-        }
-      ];
-      const BACK_END_CERTIFICATES = [
-        {
-          name: "Programming Foundations: Databases",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=2E38F8A9C38B4F4A9188A025670CCE34"
-        },
-        {
-          name: "SQL Fundamentals",
-          link: "https://www.sololearn.com/Certificate/1060-7295288/pdf/"
-        },
-        {
-          name: "PHP Tutorial",
-          link: "https://www.sololearn.com/Certificate/1059-7295288/pdf/"
-        },
-        {
-          name: "Learning Node.js",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=60CCDDEF323C4269B284235A65E45672"
-        }
-      ];
-      const SALESFORCE_CERTIFICATES = [
-        {
-          name: "Learning Salesforce",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=3B8957B26974428A9E86E3856EDFDF04"
-        },
-        {
-          name:
-            "Salesforce Trailhead [App Customization Specialist SuperBadge + 13 Badges]",
-          link: ""
-        }
-      ];
-      const TOOLBOX = [
-<<<<<<< HEAD
-        "React",
-        "React Native",
-        "React VR",
-        "React Router",
-        "Redux",
-        "Vue",
-        "Vuex",
-        "Vue Router",
-        "Angular",
-        "Angular.js",
-        "Firebase Firestore",
-        "Firebase Authentication",
-        "Firebase Hosting/Storage",
-        "Tensorflow",
-        "Dialogflow",
-        "OpenAI",
-        "Node.js",
-        "Python",
-        "Django",
-        "C#",
-        "WordPress",
-        "Web Components",
-        "PWAs",
-        "AG Grid",
-        "Datatables",
-        "Highcharts",
-        "Wix",
-        "Social Media",
-        "Facebook Ads",
-        "Unity",
-        "Zapier",
-        "Photoshop",
-        "Illustrator",
-        "Clarifai API",
-        "Facebook APIs",
-        "Facebook Authentication",
-        "Dialogflow",
-        "Git",
-        "Word",
-        "Excel",
-        "Netlify",
-        "Heroku",
-        "Client Services",
-        "RSS Feeds",
-        "Bootstrap",
-        "Tachyons",
-        "Materialize",
-        "MySQL",
-        "PostgreSQL",
-        "Django",
-        "Mailchimp",
-        "sproutSocial",
-        "Constant Contact",
-        "Salesforce",
-        "Various CSS Tools",
-        "Trello",
-        "monday",
-        "wrike",
-        "Postman",
-        "and More..."
-      ];
-=======
-                        'Firebase Firestore', 'Firebase Authentication', 'Firebase Hosting/Storage', 'WordPress', 
-                        'Wix', 'Social Media', 'Facebook Ads', 'Unity', 'Zapier', 'Photoshop', 'Illustrator', 'Clarifai API',
-                        'Facebook APIs', 'Facebook Authentication', 'Dialogflow', 'Git', 'Word', 'Excel', 'Netlify', 'Heroku',
-                        'Client Services', 'RSS Feeds', 'Bootstrap', 'Tachyons', 'Materialize', 'ag-Grid', 'DataTables', 'MySQL', 'PostgreSQL', 'Django',
-                        'MailChimp', 'sproutsocial', 'Constant Contact', 'Salesforce', 'Various CSS/Font/Design Tools', 'Trello', 'monday', 
-                        'wrike', 'Postman', 'Web Components', 'and More...'
-                      ]
->>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
-      const OTHER = [
-        {
-          name: "Git Essential Training",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=F7F46FF9870445CA93032970BB205AF8"
-        },
-        {
-          name: "Workflow Tools for Web Developers",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=1BF88AB7089545ACB1566125130E1502"
-        },
-        {
-          name: "Game Design Foundations: 1 Ideas, Core Loops, and Goals",
-          link:
-            "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=AE84B1C343C64BFC9B7EEA00F659F9D3"
-        },
-        {
-          name: "C# Tutorial",
-          link: "https://www.sololearn.com/Certificate/1080-7295288/pdf/"
-        },
-        {
-          name: "And a whole lotta documentation...",
-          link: ""
-        }
-      ];
+            const FULL_STACK_CERTIFICATES = [
+              {
+                name: "The Complete Web Developer in 2018: Zero to Mastery",
+                link: "https://www.udemy.com/the-complete-web-developer-in-2018/"
+              },
+              {
+                name: "Web Development Foundations: Full-Stack vs Front-End",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=7C8169EA18BE4C74A689461D6E9412C8"
+              },
+              {
+                name: "Become a Web Developer Learning Path",
+                link:
+                  "https://www.lynda.com/learning-paths/Web/become-a-web-developer"
+              }
+            ];
+            const FRONT_END_CERTIFICATES = [
+              {
+                name: "HTML Essential Training",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=27B192C2A8E04EB8BF643C35B8CE4EBB"
+              },
+              {
+                name: "HTML Fundamentals",
+                link: "https://www.sololearn.com/Certificate/1014-7295288/pdf/"
+              },
+              {
+                name: "Introduction to CSS",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=7D49FBBC67FD49D892C19632E8BD4D58"
+              },
+              {
+                name: "CSS Fundamentals",
+                link: "https://www.sololearn.com/Certificate/1023-7295288/pdf/"
+              },
+              {
+                name: "CSS Essential Training 1",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=7B13742E79694C8DB312CDF3E1017B65"
+              },
+              {
+                name: "CSS Essential Training 2",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=22EE7DC1A6154C33BAD130428DE9FAEB"
+              },
+              {
+                name: "Programming Foundations: Fundamentals",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=6D44DDCC9F26466A8E03E72E39CD9517"
+              },
+              {
+                name: "JQuery Tutorial",
+                link: "https://www.sololearn.com/Certificate/1082-7295288/pdf/"
+              },
+              {
+                name: "JavaScript Tutorial",
+                link: "https://www.sololearn.com/Certificate/1024-7295288/pdf/"
+              },
+              {
+                name: "JavaScript Essential Training",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=CF3339F0A7404C13BB6A23A224365614"
+              },
+              {
+                name: "JavaScript: Classes",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=11D4E37FEB5C4898849FE7E3B76057CC"
+              },
+              {
+                name: "Learning React.js",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=F73B35357B6D488F9EF00C6CFD95083E"
+              },
+              {
+                name: "React: Working with APIs",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=681DE13C92B445C886EDE509C945C14D"
+              },
+              {
+                name: "Learning React Native",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=B66222BA7EA94B3F92D3B41BCE8F8C78"
+              },
+              {
+                name: "Learning React VR",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=820687CE3FBB4C56A439F30B3DE0AB50"
+              },
+              {
+                name: "Python Tutorial",
+                link: "https://www.sololearn.com/Certificate/1073-7295288/pdf/"
+              }
+            ];
+            const BACK_END_CERTIFICATES = [
+              {
+                name: "Programming Foundations: Databases",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=2E38F8A9C38B4F4A9188A025670CCE34"
+              },
+              {
+                name: "SQL Fundamentals",
+                link: "https://www.sololearn.com/Certificate/1060-7295288/pdf/"
+              },
+              {
+                name: "PHP Tutorial",
+                link: "https://www.sololearn.com/Certificate/1059-7295288/pdf/"
+              },
+              {
+                name: "Learning Node.js",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=60CCDDEF323C4269B284235A65E45672"
+              }
+            ];
+            const SALESFORCE_CERTIFICATES = [
+              {
+                name: "Learning Salesforce",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=3B8957B26974428A9E86E3856EDFDF04"
+              },
+              {
+                name:
+                  "Salesforce Trailhead [App Customization Specialist SuperBadge + 13 Badges]",
+                link: ""
+              }
+            ];
+            const TOOLBOX = [
+              "React",
+              "React Native",
+              "React VR",
+              "React Router",
+              "Redux",
+              "Vue",
+              "Vuex",
+              "Vue Router",
+              "Angular",
+              "Angular.js",
+              "Firebase Firestore",
+              "Firebase Authentication",
+              "Firebase Hosting/Storage",
+              "Tensorflow",
+              "Dialogflow",
+              "OpenAI",
+              "Node.js",
+              "Python",
+              "Django",
+              "C#",
+              "WordPress",
+              "Web Components",
+              "PWAs",
+              "AG Grid",
+              "Datatables",
+              "Highcharts",
+              "Wix",
+              "Social Media",
+              "Facebook Ads",
+              "Unity",
+              "Zapier",
+              "Photoshop",
+              "Illustrator",
+              "Clarifai API",
+              "Facebook APIs",
+              "Facebook Authentication",
+              "Dialogflow",
+              "Git",
+              "Word",
+              "Excel",
+              "Netlify",
+              "Heroku",
+              "Client Services",
+              "RSS Feeds",
+              "Bootstrap",
+              "Tachyons",
+              "Materialize",
+              "MySQL",
+              "PostgreSQL",
+              "Mailchimp",
+              "sproutSocial",
+              "Constant Contact",
+              "Salesforce",
+              "Various CSS Tools",
+              "Trello",
+              "monday",
+              "wrike",
+              "Postman",
+              "and More..."
+            ];
+            const OTHER = [
+              {
+                name: "Git Essential Training",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=F7F46FF9870445CA93032970BB205AF8"
+              },
+              {
+                name: "Workflow Tools for Web Developers",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=1BF88AB7089545ACB1566125130E1502"
+              },
+              {
+                name: "Game Design Foundations: 1 Ideas, Core Loops, and Goals",
+                link:
+                  "https://www.lynda.com/home/CertificateOfCompletion/PrintCertificate.aspx?lpk57=AE84B1C343C64BFC9B7EEA00F659F9D3"
+              },
+              {
+                name: "C# Tutorial",
+                link: "https://www.sololearn.com/Certificate/1080-7295288/pdf/"
+              },
+              {
+                name: "And a whole lotta documentation...",
+                link: ""
+              }
+            ];
     </script>
   </head>
   <body>
@@ -479,81 +468,81 @@
       </ul>
     </div>
     <script>
-      const completedProjects = document.querySelector(
-        "#completedProjectsSection"
-      );
-      const fullStackUL = document.querySelector("#fullStackUL");
-      const frontEndUL = document.querySelector("#frontEndUL");
-      const backEndUL = document.querySelector("#backEndUL");
-      const salesforceUL = document.querySelector("#salesforceUL");
-      const toolboxUL = document.querySelector("#toolboxUL");
-      const otherUL = document.querySelector("#otherUL");
+            const completedProjects = document.querySelector(
+              "#completedProjectsSection"
+            );
+            const fullStackUL = document.querySelector("#fullStackUL");
+            const frontEndUL = document.querySelector("#frontEndUL");
+            const backEndUL = document.querySelector("#backEndUL");
+            const salesforceUL = document.querySelector("#salesforceUL");
+            const toolboxUL = document.querySelector("#toolboxUL");
+            const otherUL = document.querySelector("#otherUL");
 
-      const buildProjectCards = projects => {
-        projects.forEach(project => {
-<<<<<<< HEAD
-          completedProjects.innerHTML += `
-=======
-          if(project.link){
-          completedProjects.innerHTML += 
-            `
->>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
-              <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
-                <div class="aspect-ratio aspect-ratio--1x1">
-                  <a href="${project.link}"><img style="background-image:url(${
-            project.image
-          })"
-                  class="grow db bg-center cover aspect-ratio--object shadow-1" /></a>
-                </div>
-                <a href="${project.link}" class="ph2 ph0-ns pb3 link db">
-                  <h3 class="f5 f4-ns mb0 black-90">${project.title}</h3>
-                  <h3 class="f6 f5 fw4 mt2 black-60">${project.subTitle}</h3>
-                </a>
-              </article>
-<<<<<<< HEAD
-            `;
-        });
-      };
-=======
-            `} else {
-              completedProjects.innerHTML += 
-              `
-              <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
-                <div class="aspect-ratio aspect-ratio--1x1">
-                  <img style="background-image:url(${project.image})"
-                  class="grow db bg-center cover aspect-ratio--object shadow-1" />
-                </div>
-                <a class="ph2 ph0-ns pb3 link db">
-                  <h3 class="f5 f4-ns mb0 black-90">${project.title}</h3>
-                  <h3 class="f6 f5 fw4 mt2 black-60">${project.subTitle}</h3>
-                </a>
-              </article>
-            `
+            const buildProjectCards = projects => {
+              projects.forEach(project => {
+      <<<<<<< HEAD
+                completedProjects.innerHTML += `
+      =======
+                if(project.link){
+                completedProjects.innerHTML +=
+                  `
+      >>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
+                    <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+                      <div class="aspect-ratio aspect-ratio--1x1">
+                        <a href="${project.link}"><img style="background-image:url(${
+                  project.image
+                })"
+                        class="grow db bg-center cover aspect-ratio--object shadow-1" /></a>
+                      </div>
+                      <a href="${project.link}" class="ph2 ph0-ns pb3 link db">
+                        <h3 class="f5 f4-ns mb0 black-90">${project.title}</h3>
+                        <h3 class="f6 f5 fw4 mt2 black-60">${project.subTitle}</h3>
+                      </a>
+                    </article>
+      <<<<<<< HEAD
+                  `;
+              });
+            };
+      =======
+                  `} else {
+                    completedProjects.innerHTML +=
+                    `
+                    <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+                      <div class="aspect-ratio aspect-ratio--1x1">
+                        <img style="background-image:url(${project.image})"
+                        class="grow db bg-center cover aspect-ratio--object shadow-1" />
+                      </div>
+                      <a class="ph2 ph0-ns pb3 link db">
+                        <h3 class="f5 f4-ns mb0 black-90">${project.title}</h3>
+                        <h3 class="f6 f5 fw4 mt2 black-60">${project.subTitle}</h3>
+                      </a>
+                    </article>
+                  `
+                  }
+              })
             }
-        })
-      }
->>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
+      >>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
 
-      const buildSection = (section, itemArray) => {
-        itemArray.forEach(item => {
-          section.innerHTML +=
-            typeof itemArray[0] === "object"
-              ? `<li class="dib mr1 mb2"><a href="${
-                  item.link
-                }" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">${
-                  item.name
-                }</a></li>`
-              : `<li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">${item}</a></li>`;
-        });
-      };
+            const buildSection = (section, itemArray) => {
+              itemArray.forEach(item => {
+                section.innerHTML +=
+                  typeof itemArray[0] === "object"
+                    ? `<li class="dib mr1 mb2"><a href="${
+                        item.link
+                      }" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">${
+                        item.name
+                      }</a></li>`
+                    : `<li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">${item}</a></li>`;
+              });
+            };
 
-      buildProjectCards(COMPLETED_PROJECTS);
-      buildSection(fullStackUL, FULL_STACK_CERTIFICATES);
-      buildSection(frontEndUL, FRONT_END_CERTIFICATES);
-      buildSection(backEndUL, BACK_END_CERTIFICATES);
-      buildSection(salesforceUL, SALESFORCE_CERTIFICATES);
-      buildSection(toolboxUL, TOOLBOX);
-      buildSection(otherUL, OTHER);
+            buildProjectCards(COMPLETED_PROJECTS);
+            buildSection(fullStackUL, FULL_STACK_CERTIFICATES);
+            buildSection(frontEndUL, FRONT_END_CERTIFICATES);
+            buildSection(backEndUL, BACK_END_CERTIFICATES);
+            buildSection(salesforceUL, SALESFORCE_CERTIFICATES);
+            buildSection(toolboxUL, TOOLBOX);
+            buildSection(otherUL, OTHER);
     </script>
   </body>
 </html>
