@@ -35,10 +35,17 @@
           link: "https://facial-recognition-counter.herokuapp.com/"
         },
         {
+<<<<<<< HEAD
           title: "Block Breaker",
           subTitle: "Unity, C#, <br>[SORRY, OUT OF ORDER]",
           image: "assets/blocks.jpg",
           link: ""
+=======
+          title: 'Block Breaker',
+          subTitle: 'Unity, C#, <br>[SORRY, NEEDS NEW HOSTING. CHECK AGAIN SOON.]',
+          image: 'assets/blocks.jpg',
+          link: ''
+>>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
         },
         {
           title: "Robofriends",
@@ -180,6 +187,7 @@
         }
       ];
       const TOOLBOX = [
+<<<<<<< HEAD
         "React",
         "React Native",
         "React VR",
@@ -241,6 +249,15 @@
         "Postman",
         "and More..."
       ];
+=======
+                        'Firebase Firestore', 'Firebase Authentication', 'Firebase Hosting/Storage', 'WordPress', 
+                        'Wix', 'Social Media', 'Facebook Ads', 'Unity', 'Zapier', 'Photoshop', 'Illustrator', 'Clarifai API',
+                        'Facebook APIs', 'Facebook Authentication', 'Dialogflow', 'Git', 'Word', 'Excel', 'Netlify', 'Heroku',
+                        'Client Services', 'RSS Feeds', 'Bootstrap', 'Tachyons', 'Materialize', 'ag-Grid', 'DataTables', 'MySQL', 'PostgreSQL', 'Django',
+                        'MailChimp', 'sproutsocial', 'Constant Contact', 'Salesforce', 'Various CSS/Font/Design Tools', 'Trello', 'monday', 
+                        'wrike', 'Postman', 'Web Components', 'and More...'
+                      ]
+>>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
       const OTHER = [
         {
           name: "Git Essential Training",
@@ -474,7 +491,13 @@
 
       const buildProjectCards = projects => {
         projects.forEach(project => {
+<<<<<<< HEAD
           completedProjects.innerHTML += `
+=======
+          if(project.link){
+          completedProjects.innerHTML += 
+            `
+>>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
               <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
                 <div class="aspect-ratio aspect-ratio--1x1">
                   <a href="${project.link}"><img style="background-image:url(${
@@ -487,9 +510,29 @@
                   <h3 class="f6 f5 fw4 mt2 black-60">${project.subTitle}</h3>
                 </a>
               </article>
+<<<<<<< HEAD
             `;
         });
       };
+=======
+            `} else {
+              completedProjects.innerHTML += 
+              `
+              <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+                <div class="aspect-ratio aspect-ratio--1x1">
+                  <img style="background-image:url(${project.image})"
+                  class="grow db bg-center cover aspect-ratio--object shadow-1" />
+                </div>
+                <a class="ph2 ph0-ns pb3 link db">
+                  <h3 class="f5 f4-ns mb0 black-90">${project.title}</h3>
+                  <h3 class="f6 f5 fw4 mt2 black-60">${project.subTitle}</h3>
+                </a>
+              </article>
+            `
+            }
+        })
+      }
+>>>>>>> aa84409f7400bfe5a494f0986e588154724dcaa2
 
       const buildSection = (section, itemArray) => {
         itemArray.forEach(item => {
